@@ -1,0 +1,22 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "Chat App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drumovski/Chat_app.git"
+  },
+  "author": "Jason Stacy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drumovski/Chat_app/issues"
+  },
+  "homepage": "https://github.com/drumovski/Chat_app#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
