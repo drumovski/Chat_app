@@ -1,11 +1,12 @@
-var app = require('express')();
-var http = require('http').createServer(app);const PORT = 8080;
+const express = require('express');
+const app = express();
+const http = require('http');
+const server = http.createServer(app);
 
-http.listen(PORT, () => {
-    console.log(`listening on port:${PORT}`);
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
 });
 
-io.on('connection', (socket) => { /* socket object may be used to send specific messages to the new connected client */
-
-    console.log('new client connected');
+server.listen(3000, () => {
+  console.log('listening on *:3000');
 });
